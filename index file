@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <title>sorry mr.Prabhakaran</title>
+
+<h1>Hello Mr.Prabhakaran</h1>
+
+<button onclick="typeWriter()">Click me Prabhakaran</button>
+
+<p id="sorry"></p>
+
+<script>
+var i = 0;
+var txt = 'How are you been? I sincerely apologize for missing your call. I missed your call at that moment because [the reason for not picking the call]. I am sorry for that, and I promise it won"t happen again. Please, accept my apologies.';
+var speed = 200;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("sorry").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</body>
+</html>
+           
